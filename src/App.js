@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { type } from "@testing-library/user-event/dist/type";
+import React, { useState } from "react";
+import Counter from "./componets/Counter";
 
-function App() {
-  return (
-    <div className="App">
-     
-    </div>
-  );
-}
+  function App() {
+    const [value, setValue] = useState('Егеер')
+    
+    return (
+      <div className="App">
+        <Counter/>
+        
+      </div>
+    );
+  }
 
 export default App;
